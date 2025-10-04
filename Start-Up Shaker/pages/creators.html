@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nos Créateurs - Metanoia</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        .page {
+            padding-top: 100px;
+        }
+        .page-hero {
+            background: linear-gradient(135deg, #f5f3f0 0%, #e8e4e0 100%);
+            padding: 80px 0;
+            text-align: center;
+        }
+        .page-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+            font-weight: 300;
+            color: #2c2c2c;
+            margin-bottom: 30px;
+            letter-spacing: 2px;
+        }
+        .page-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 80px 20px;
+        }
+        .creators-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            margin: 40px 0;
+        }
+        .creator-card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+            text-align: center;
+        }
+        .creator-image {
+            height: 300px;
+            overflow: hidden;
+        }
+        .creator-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.4s ease;
+        }
+        .creator-info {
+            padding: 30px;
+        }
+        .creator-info h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: #2c2c2c;
+        }
+        .creator-description {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        .creator-specialty {
+            color: #8b7355;
+            font-size: 14px;
+            font-weight: 500;
+            margin-bottom: 20px;
+        }
+        .btn-discover {
+            background: #8b7355;
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .btn-discover:hover {
+            background: #6b5b47;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(139, 115, 85, 0.3);
+        }
+        .creator-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+        }
+        .creator-card:hover .creator-image img {
+            transform: scale(1.05);
+        }
+        .back-link {
+            display: inline-block;
+            margin-top: 40px;
+            color: #8b7355;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+        .back-link:hover {
+            color: #2c2c2c;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <div class="menu-hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="logo">
+                <a href="index.html" style="text-decoration: none; color: inherit;">
+                    <h1>Metanoia</h1>
+                </a>
+            </div>
+            <div class="header-icons">
+                <a href="#" class="icon-link">🔍</a>
+                <a href="#" class="icon-link">♡</a>
+                <a href="#" class="icon-link">🛒</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="page">
+        <!-- Page Hero -->
+        <section class="page-hero">
+            <div class="container">
+                <h1 class="page-title">Nos Créateurs</h1>
+                <img src="images/artisan.webp" alt="Nos Créateurs Metanoia" style="max-width: 600px; width: 100%; border-radius: 8px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);">
+            </div>
+        </section>
+
+        <!-- Page Content -->
+        <section class="page-content">
+            <div class="container">
+                <h2 style="font-family: 'Playfair Display', serif; text-align: center; margin-bottom: 50px; color: #2c2c2c;">Découvrez nos marques partenaires</h2>
+                
+                <div class="creators-grid">
+                    <div class="creator-card">
+                        <div class="creator-image">
+                            <img src="images/couture.webp" alt="Éthique Couture">
+                        </div>
+                        <div class="creator-info">
+                            <h3>Éthique Couture</h3>
+                            <p class="creator-specialty">Spécialiste du denim upcyclé</p>
+                            <p class="creator-description">Fondée par Marie Dubois, Éthique Couture révolutionne l'univers du denim en donnant une seconde vie aux jeans usagés. Chaque pièce est unique, transformée avec passion dans notre atelier parisien.</p>
+                            <a href="ethique-couture.html" class="btn-discover">Découvrir la marque</a>
+                        </div>
+                    </div>
+
+                    <div class="creator-card">
+                        <div class="creator-image">
+                            <img src="images/cuir végan.webp" alt="Végan Leather Co.">
+                        </div>
+                        <div class="creator-info">
+                            <h3>Végan Leather Co.</h3>
+                            <p class="creator-specialty">Cuir végétal et accessoires</p>
+                            <p class="creator-description">Végan Leather Co. réinvente le luxe avec des alternatives végétales au cuir traditionnel. Fondée par les frères Martin et Sophie Laurent, la marque développe des matériaux innovants.</p>
+                            <a href="vegan-leather.html" class="btn-discover">Découvrir la marque</a>
+                        </div>
+                    </div>
+
+                    <div class="creator-card">
+                        <div class="creator-image">
+                            <img src="images/textiles tissés.webp" alt="Loom Revival">
+                        </div>
+                        <div class="creator-info">
+                            <h3>Loom Revival</h3>
+                            <p class="creator-specialty">Textiles tissés à la main</p>
+                            <p class="creator-description">Loom Revival perpétue l'art ancestral du tissage à la main. Fondée par Elena Rodriguez, la marque redonne vie aux métiers à tisser traditionnels et aux techniques oubliées.</p>
+                            <a href="loom-revival.html" class="btn-discover">Découvrir la marque</a>
+                        </div>
+                    </div>
+
+                    <div class="creator-card">
+                        <div class="creator-image">
+                            <img src="images/accessoires.webp" alt="ReBorn Accessories">
+                        </div>
+                        <div class="creator-info">
+                            <h3>ReBorn Accessories</h3>
+                            <p class="creator-specialty">Bijoux et accessoires upcyclés</p>
+                            <p class="creator-description">ReBorn Accessories transforme l'impossible en bijoux d'exception. Fondée par Camille Moreau, la marque récupère des matériaux improbables pour créer des accessoires uniques.</p>
+                            <a href="reborn-accessories.html" class="btn-discover">Découvrir la marque</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="text-align: center;">
+                    <a href="index.html" class="back-link">← Retour à Metanoia</a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

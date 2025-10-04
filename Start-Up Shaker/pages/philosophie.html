@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notre Philosophie - Metanoia</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        .philosophy-page {
+            padding-top: 100px;
+        }
+        .philosophy-hero {
+            background: linear-gradient(135deg, #f5f3f0 0%, #e8e4e0 100%);
+            padding: 80px 0;
+            text-align: center;
+        }
+        .philosophy-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+            font-weight: 300;
+            color: #2c2c2c;
+            margin-bottom: 30px;
+            letter-spacing: 2px;
+        }
+        .philosophy-content {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 80px 20px;
+        }
+        .philosophy-text {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            color: #666;
+            margin-bottom: 40px;
+            text-align: center;
+            font-style: italic;
+        }
+        .philosophy-principles {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            margin: 60px 0;
+        }
+        .principle-card {
+            text-align: center;
+            padding: 40px 30px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s ease;
+        }
+        .principle-card:hover {
+            transform: translateY(-5px);
+        }
+        .principle-icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+        .principle-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: #2c2c2c;
+        }
+        .principle-text {
+            color: #666;
+            line-height: 1.6;
+        }
+        .back-link {
+            display: inline-block;
+            margin-top: 40px;
+            color: #8b7355;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+        .back-link:hover {
+            color: #2c2c2c;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <div class="menu-hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="logo">
+                <a href="index.html" style="text-decoration: none; color: inherit;">
+                    <h1>Metanoia</h1>
+                </a>
+            </div>
+            <div class="header-icons">
+                <a href="#" class="icon-link">🔍</a>
+                <a href="#" class="icon-link">♡</a>
+                <a href="#" class="icon-link">🛒</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="philosophy-page">
+        <!-- Philosophy Hero -->
+        <section class="philosophy-hero">
+            <div class="container">
+                <h1 class="philosophy-title">Notre Philosophie</h1>
+                <img src="images/philosophie-luxe.webp" alt="Atelier artisanal" style="max-width: 600px; width: 100%; border-radius: 8px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);">
+            </div>
+        </section>
+
+        <!-- Philosophy Content -->
+        <section class="philosophy-content">
+            <div class="container">
+                <p class="philosophy-text">
+                    "Metanoia n'est pas une simple marketplace. C'est une renaissance, une communauté qui célèbre l'artisanat, l'upcycling et la beauté du geste. Chaque pièce raconte une histoire, chaque créateur porte une vision, chaque achat soutient un mouvement vers un luxe plus conscient."
+                </p>
+
+                <div class="philosophy-principles">
+                    <div class="principle-card">
+                        <div class="principle-icon">♻️</div>
+                        <h3 class="principle-title">Économie Circulaire</h3>
+                        <p class="principle-text">Nous croyons en une mode qui respecte les ressources de notre planète. Chaque pièce Metanoia prolonge la vie des matériaux existants, réduisant notre impact environnemental.</p>
+                    </div>
+                    <div class="principle-card">
+                        <div class="principle-icon">✋</div>
+                        <h3 class="principle-title">Savoir-faire Artisanal</h3>
+                        <p class="principle-text">Nous valorisons les techniques traditionnelles et les gestes transmis de génération en génération. Chaque création porte l'empreinte unique de son créateur.</p>
+                    </div>
+                    <div class="principle-card">
+                        <div class="principle-icon">💎</div>
+                        <h3 class="principle-title">Luxe Conscient</h3>
+                        <p class="principle-text">Le vrai luxe ne réside pas dans la quantité mais dans la qualité, l'unicité et l'histoire que porte chaque pièce. Un luxe qui a du sens.</p>
+                    </div>
+                    <div class="principle-card">
+                        <div class="principle-icon">🌱</div>
+                        <h3 class="principle-title">Impact Positif</h3>
+                        <p class="principle-text">Chaque achat sur Metanoia contribue à soutenir des créateurs engagés et à promouvoir une mode plus responsable et éthique.</p>
+                    </div>
+                </div>
+
+                <div style="text-align: center;">
+                    <a href="index.html" class="back-link">← Retour à Metanoia</a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
