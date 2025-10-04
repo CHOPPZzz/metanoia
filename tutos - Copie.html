@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutoriels - Metanoia</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        .page {
+            padding-top: 100px;
+        }
+        .page-hero {
+            background: linear-gradient(135deg, #f5f3f0 0%, #e8e4e0 100%);
+            padding: 80px 0;
+            text-align: center;
+        }
+        .page-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+            font-weight: 300;
+            color: #2c2c2c;
+            margin-bottom: 30px;
+            letter-spacing: 2px;
+        }
+        .page-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 80px 20px;
+        }
+        .tutorials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 40px;
+            margin: 40px 0;
+        }
+        .tutorial-card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+        }
+        .tutorial-image {
+            height: 250px;
+            overflow: hidden;
+        }
+        .tutorial-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.4s ease;
+        }
+        .tutorial-info {
+            padding: 30px;
+        }
+        .tutorial-info h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+            color: #2c2c2c;
+        }
+        .tutorial-description {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        .tutorial-difficulty {
+            color: #8b7355;
+            font-size: 14px;
+            font-weight: 500;
+            margin-bottom: 20px;
+        }
+        .tutorial-difficulty:before {
+            content: "⭐ ";
+            margin-right: 5px;
+        }
+        .btn-read {
+            background: #2c2c2c;
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .btn-read:hover {
+            background: #8b7355;
+        }
+        .tutorial-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+        }
+        .tutorial-card:hover .tutorial-image img {
+            transform: scale(1.05);
+        }
+        .back-link {
+            display: inline-block;
+            margin-top: 40px;
+            color: #8b7355;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+        .back-link:hover {
+            color: #2c2c2c;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <div class="menu-hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="logo">
+                <a href="index.html" style="text-decoration: none; color: inherit;">
+                    <h1>Metanoia</h1>
+                </a>
+            </div>
+            <div class="header-icons">
+                <a href="#" class="icon-link">🔍</a>
+                <a href="#" class="icon-link">♡</a>
+                <a href="#" class="icon-link">🛒</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="page">
+        <!-- Page Hero -->
+        <section class="page-hero">
+            <div class="container">
+                <h1 class="page-title">Tutoriels</h1>
+                <img src="images/couture.webp" alt="Tutoriels Metanoia" style="max-width: 600px; width: 100%; border-radius: 8px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);">
+            </div>
+        </section>
+
+        <!-- Page Content -->
+        <section class="page-content">
+            <div class="container">
+                <h2 style="font-family: 'Playfair Display', serif; text-align: center; margin-bottom: 50px; color: #2c2c2c;">Apprenez l'art de l'upcycling</h2>
+                
+                <div class="tutorials-grid">
+                    <div class="tutorial-card">
+                        <div class="tutorial-image">
+                            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Transformer une chemise">
+                        </div>
+                        <div class="tutorial-info">
+                            <h3>Transformer une chemise en top</h3>
+                            <p class="tutorial-description">Guide étape par étape pour donner une nouvelle vie à vos chemises et créer des tops uniques.</p>
+                            <p class="tutorial-difficulty">Débutant</p>
+                            <a href="tuto-chemise.html" class="btn-read">Lire le tutoriel</a>
+                        </div>
+                    </div>
+
+                    <div class="tutorial-card">
+                        <div class="tutorial-image">
+                            <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Chutes de tissus">
+                        </div>
+                        <div class="tutorial-info">
+                            <h3>Donner une seconde vie aux chutes</h3>
+                            <p class="tutorial-description">Créez des accessoires et décorations à partir de vos chutes de tissus.</p>
+                            <p class="tutorial-difficulty">Intermédiaire</p>
+                            <a href="tuto-chutes.html" class="btn-read">Lire le tutoriel</a>
+                        </div>
+                    </div>
+
+                    <div class="tutorial-card">
+                        <div class="tutorial-image">
+                            <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Couture de base">
+                        </div>
+                        <div class="tutorial-info">
+                            <h3>Apprendre la couture en 5 gestes</h3>
+                            <p class="tutorial-description">Les techniques essentielles pour commencer à coudre et transformer vos vêtements.</p>
+                            <p class="tutorial-difficulty">Débutant</p>
+                            <a href="tuto-couture.html" class="btn-read">Lire le tutoriel</a>
+                        </div>
+                    </div>
+
+                    <div class="tutorial-card">
+                        <div class="tutorial-image">
+                            <img src="https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Récupération créative">
+                        </div>
+                        <div class="tutorial-info">
+                            <h3>Récupération créative</h3>
+                            <p class="tutorial-description">Transformez des objets du quotidien en créations artistiques et utiles.</p>
+                            <p class="tutorial-difficulty">Avancé</p>
+                            <a href="#" class="btn-read">Lire le tutoriel</a>
+                        </div>
+                    </div>
+
+                    <div class="tutorial-card">
+                        <div class="tutorial-image">
+                            <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Teinture naturelle">
+                        </div>
+                        <div class="tutorial-info">
+                            <h3>Teinture naturelle</h3>
+                            <p class="tutorial-description">Apprenez à teindre vos tissus avec des ingrédients naturels et écologiques.</p>
+                            <p class="tutorial-difficulty">Intermédiaire</p>
+                            <a href="#" class="btn-read">Lire le tutoriel</a>
+                        </div>
+                    </div>
+
+                    <div class="tutorial-card">
+                        <div class="tutorial-image">
+                            <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Broderie upcycling">
+                        </div>
+                        <div class="tutorial-info">
+                            <h3>Broderie upcycling</h3>
+                            <p class="tutorial-description">Décorez et personnalisez vos vêtements avec des techniques de broderie modernes.</p>
+                            <p class="tutorial-difficulty">Intermédiaire</p>
+                            <a href="#" class="btn-read">Lire le tutoriel</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="text-align: center;">
+                    <a href="index.html" class="back-link">← Retour à Metanoia</a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

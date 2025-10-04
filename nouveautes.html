@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nouveautés - Metanoia</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        .page {
+            padding-top: 100px;
+        }
+        .page-hero {
+            background: linear-gradient(135deg, #f5f3f0 0%, #e8e4e0 100%);
+            padding: 80px 0;
+            text-align: center;
+        }
+        .page-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+            font-weight: 300;
+            color: #2c2c2c;
+            margin-bottom: 30px;
+            letter-spacing: 2px;
+        }
+        .page-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 80px 20px;
+        }
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            margin: 40px 0;
+        }
+        .product-card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+        }
+        .product-image {
+            height: 300px;
+            overflow: hidden;
+        }
+        .product-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.4s ease;
+        }
+        .product-info {
+            padding: 30px;
+        }
+        .product-info h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+            color: #2c2c2c;
+        }
+        .creator-name {
+            color: #8b7355;
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+        .price {
+            font-size: 1.2rem;
+            font-weight: 500;
+            color: #2c2c2c;
+            margin-bottom: 20px;
+        }
+        .btn-add-cart {
+            width: 100%;
+            background: #2c2c2c;
+            color: white;
+            border: none;
+            padding: 12px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .btn-add-cart:hover {
+            background: #8b7355;
+        }
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+        }
+        .product-card:hover .product-image img {
+            transform: scale(1.05);
+        }
+        .back-link {
+            display: inline-block;
+            margin-top: 40px;
+            color: #8b7355;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+        .back-link:hover {
+            color: #2c2c2c;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <div class="menu-hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="logo">
+                <a href="index.html" style="text-decoration: none; color: inherit;">
+                    <h1>Metanoia</h1>
+                </a>
+            </div>
+            <div class="header-icons">
+                <a href="#" class="icon-link">🔍</a>
+                <a href="#" class="icon-link">♡</a>
+                <a href="#" class="icon-link">🛒</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="page">
+        <!-- Page Hero -->
+        <section class="page-hero">
+            <div class="container">
+                <h1 class="page-title">Nouveautés</h1>
+                <img src="images/veste denim.webp" alt="Nouveautés Metanoia" style="max-width: 600px; width: 100%; border-radius: 8px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);">
+            </div>
+        </section>
+
+        <!-- Page Content -->
+        <section class="page-content">
+            <div class="container">
+                <h2 style="font-family: 'Playfair Display', serif; text-align: center; margin-bottom: 50px; color: #2c2c2c;">Découvrez nos dernières créations</h2>
+                
+                <div class="products-grid">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="images/veste denim.webp" alt="Veste denim upcyclée">
+                        </div>
+                        <div class="product-info">
+                            <h3>Veste Denim Renaissance</h3>
+                            <p class="creator-name">Éthique Couture</p>
+                            <p class="price">€89</p>
+                            <button class="btn-add-cart">Ajouter au panier</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="images/sac cuir végétal.webp" alt="Sac cuir végétal">
+                        </div>
+                        <div class="product-info">
+                            <h3>Sac Cuir Végétal</h3>
+                            <p class="creator-name">Végan Leather Co.</p>
+                            <p class="price">€156</p>
+                            <button class="btn-add-cart">Ajouter au panier</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="images/écharpe.webp" alt="Écharpe tissée">
+                        </div>
+                        <div class="product-info">
+                            <h3>Écharpe Loom Art</h3>
+                            <p class="creator-name">Loom Revival</p>
+                            <p class="price">€67</p>
+                            <button class="btn-add-cart">Ajouter au panier</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="images/bijoux.webp" alt="Bijoux upcyclés">
+                        </div>
+                        <div class="product-info">
+                            <h3>Collection Bijoux ReBorn</h3>
+                            <p class="creator-name">ReBorn Accessories</p>
+                            <p class="price">€45</p>
+                            <button class="btn-add-cart">Ajouter au panier</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="images/veste denim.webp" alt="Robe upcyclée">
+                        </div>
+                        <div class="product-info">
+                            <h3>Robe Patchwork</h3>
+                            <p class="creator-name">Éthique Couture</p>
+                            <p class="price">€124</p>
+                            <button class="btn-add-cart">Ajouter au panier</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="images/portefeuille.webp" alt="Portefeuille cuir végétal">
+                        </div>
+                        <div class="product-info">
+                            <h3>Portefeuille Cuir Végétal</h3>
+                            <p class="creator-name">Végan Leather Co.</p>
+                            <p class="price">€78</p>
+                            <button class="btn-add-cart">Ajouter au panier</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="text-align: center;">
+                    <a href="index.html" class="back-link">← Retour à Metanoia</a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

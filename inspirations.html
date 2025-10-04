@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inspirations - Metanoia</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        .page {
+            padding-top: 100px;
+        }
+        .page-hero {
+            background: linear-gradient(135deg, #f5f3f0 0%, #e8e4e0 100%);
+            padding: 80px 0;
+            text-align: center;
+        }
+        .page-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+            font-weight: 300;
+            color: #2c2c2c;
+            margin-bottom: 30px;
+            letter-spacing: 2px;
+        }
+        .page-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 80px 20px;
+        }
+        .inspirations-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 40px;
+            margin: 40px 0;
+        }
+        .inspiration-card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+        }
+        .inspiration-image {
+            height: 300px;
+            overflow: hidden;
+        }
+        .inspiration-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.4s ease;
+        }
+        .inspiration-info {
+            padding: 30px;
+        }
+        .inspiration-info h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+            color: #2c2c2c;
+        }
+        .inspiration-description {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        .inspiration-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        .tag {
+            background: #f5f3f0;
+            color: #8b7355;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 500;
+        }
+        .btn-read {
+            background: #2c2c2c;
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .btn-read:hover {
+            background: #8b7355;
+        }
+        .inspiration-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+        }
+        .inspiration-card:hover .inspiration-image img {
+            transform: scale(1.05);
+        }
+        .back-link {
+            display: inline-block;
+            margin-top: 40px;
+            color: #8b7355;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+        .back-link:hover {
+            color: #2c2c2c;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <div class="menu-hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="logo">
+                <a href="index.html" style="text-decoration: none; color: inherit;">
+                    <h1>Metanoia</h1>
+                </a>
+            </div>
+            <div class="header-icons">
+                <a href="#" class="icon-link">🔍</a>
+                <a href="#" class="icon-link">♡</a>
+                <a href="#" class="icon-link">🛒</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="page">
+        <!-- Page Hero -->
+        <section class="page-hero">
+            <div class="container">
+                <h1 class="page-title">Inspirations</h1>
+                <img src="images/textiles tissés.webp" alt="Inspirations Metanoia" style="max-width: 600px; width: 100%; border-radius: 8px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);">
+            </div>
+        </section>
+
+        <!-- Page Content -->
+        <section class="page-content">
+            <div class="container">
+                <h2 style="font-family: 'Playfair Display', serif; text-align: center; margin-bottom: 50px; color: #2c2c2c;">Découvrez l'univers créatif de l'upcycling</h2>
+                
+                <div class="inspirations-grid">
+                    <div class="inspiration-card">
+                        <div class="inspiration-image">
+                            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Mode upcyclée">
+                        </div>
+                        <div class="inspiration-info">
+                            <h3>Mode Upcyclée : Les Tendances 2024</h3>
+                            <p class="inspiration-description">Découvrez les dernières tendances de la mode upcyclée et comment les créateurs transforment les déchets en trésors.</p>
+                            <div class="inspiration-tags">
+                                <span class="tag">Mode</span>
+                                <span class="tag">Tendances</span>
+                                <span class="tag">2024</span>
+                            </div>
+                            <a href="#" class="btn-read">Lire l'article</a>
+                        </div>
+                    </div>
+
+                    <div class="inspiration-card">
+                        <div class="inspiration-image">
+                            <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Artisanat moderne">
+                        </div>
+                        <div class="inspiration-info">
+                            <h3>L'Artisanat Moderne : Tradition & Innovation</h3>
+                            <p class="inspiration-description">Comment les artisans contemporains réinventent les techniques traditionnelles pour créer des pièces uniques.</p>
+                            <div class="inspiration-tags">
+                                <span class="tag">Artisanat</span>
+                                <span class="tag">Tradition</span>
+                                <span class="tag">Innovation</span>
+                            </div>
+                            <a href="#" class="btn-read">Lire l'article</a>
+                        </div>
+                    </div>
+
+                    <div class="inspiration-card">
+                        <div class="inspiration-image">
+                            <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Écologie">
+                        </div>
+                        <div class="inspiration-info">
+                            <h3>L'Écologie dans la Mode</h3>
+                            <p class="inspiration-description">L'impact environnemental de la mode et comment l'upcycling contribue à un avenir plus durable.</p>
+                            <div class="inspiration-tags">
+                                <span class="tag">Écologie</span>
+                                <span class="tag">Durable</span>
+                                <span class="tag">Environnement</span>
+                            </div>
+                            <a href="#" class="btn-read">Lire l'article</a>
+                        </div>
+                    </div>
+
+                    <div class="inspiration-card">
+                        <div class="inspiration-image">
+                            <img src="https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Créateurs">
+                        </div>
+                        <div class="inspiration-info">
+                            <h3>Portraits de Créateurs</h3>
+                            <p class="inspiration-description">Rencontrez les artisans qui transforment notre vision de la mode et du luxe durable.</p>
+                            <div class="inspiration-tags">
+                                <span class="tag">Portraits</span>
+                                <span class="tag">Créateurs</span>
+                                <span class="tag">Luxe</span>
+                            </div>
+                            <a href="#" class="btn-read">Lire l'article</a>
+                        </div>
+                    </div>
+
+                    <div class="inspiration-card">
+                        <div class="inspiration-image">
+                            <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Techniques">
+                        </div>
+                        <div class="inspiration-info">
+                            <h3>Techniques d'Upcycling</h3>
+                            <p class="inspiration-description">Les méthodes créatives pour transformer vos vêtements et objets du quotidien.</p>
+                            <div class="inspiration-tags">
+                                <span class="tag">Techniques</span>
+                                <span class="tag">DIY</span>
+                                <span class="tag">Créatif</span>
+                            </div>
+                            <a href="#" class="btn-read">Lire l'article</a>
+                        </div>
+                    </div>
+
+                    <div class="inspiration-card">
+                        <div class="inspiration-image">
+                            <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Communauté">
+                        </div>
+                        <div class="inspiration-info">
+                            <h3>La Communauté Metanoia</h3>
+                            <p class="inspiration-description">Découvrez les histoires inspirantes de notre communauté et leurs créations uniques.</p>
+                            <div class="inspiration-tags">
+                                <span class="tag">Communauté</span>
+                                <span class="tag">Histoires</span>
+                                <span class="tag">Inspiration</span>
+                            </div>
+                            <a href="#" class="btn-read">Lire l'article</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="text-align: center;">
+                    <a href="index.html" class="back-link">← Retour à Metanoia</a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

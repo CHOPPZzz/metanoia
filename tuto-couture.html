@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apprendre la couture en 5 gestes - Metanoia</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        .tutorial-page {
+            padding-top: 100px;
+        }
+        .tutorial-hero {
+            background: linear-gradient(135deg, #f5f3f0 0%, #e8e4e0 100%);
+            padding: 80px 0;
+            text-align: center;
+        }
+        .tutorial-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            font-weight: 300;
+            color: #2c2c2c;
+            margin-bottom: 30px;
+            letter-spacing: 1px;
+        }
+        .tutorial-content {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 80px 20px;
+        }
+        .tutorial-intro {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            color: #666;
+            margin-bottom: 50px;
+            text-align: center;
+            font-style: italic;
+        }
+        .gestes {
+            display: grid;
+            gap: 40px;
+        }
+        .geste {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+        }
+        .geste:nth-child(even) {
+            grid-template-columns: 1fr 1fr;
+        }
+        .geste:nth-child(even) .geste-image {
+            order: 2;
+        }
+        .geste:nth-child(even) .geste-content {
+            order: 1;
+        }
+        .geste-image img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+        .geste-number {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            color: #8b7355;
+            margin-bottom: 15px;
+        }
+        .geste-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: #2c2c2c;
+        }
+        .geste-text {
+            color: #666;
+            line-height: 1.6;
+        }
+        .materials {
+            background: #f5f3f0;
+            padding: 40px;
+            border-radius: 8px;
+            margin: 40px 0;
+        }
+        .materials h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            color: #2c2c2c;
+        }
+        .materials ul {
+            list-style: none;
+            padding: 0;
+        }
+        .materials li {
+            padding: 8px 0;
+            color: #666;
+        }
+        .materials li:before {
+            content: "✂️ ";
+            margin-right: 10px;
+        }
+        .back-link {
+            display: inline-block;
+            margin-top: 40px;
+            color: #8b7355;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+        .back-link:hover {
+            color: #2c2c2c;
+        }
+        @media (max-width: 768px) {
+            .geste {
+                grid-template-columns: 1fr;
+            }
+            .geste:nth-child(even) {
+                grid-template-columns: 1fr;
+            }
+            .geste:nth-child(even) .geste-image {
+                order: 1;
+            }
+            .geste:nth-child(even) .geste-content {
+                order: 2;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <div class="menu-hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="logo">
+                <a href="index.html" style="text-decoration: none; color: inherit;">
+                    <h1>Metanoia</h1>
+                </a>
+            </div>
+            <div class="header-icons">
+                <a href="#" class="icon-link">🔍</a>
+                <a href="#" class="icon-link">♡</a>
+                <a href="#" class="icon-link">🛒</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="tutorial-page">
+        <!-- Tutorial Hero -->
+        <section class="tutorial-hero">
+            <div class="container">
+                <h1 class="tutorial-title">Apprendre la couture en 5 gestes</h1>
+                <img src="images/apprendre la couture en 5 gestes.jpg" alt="Couture de base" style="max-width: 600px; width: 100%; border-radius: 8px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);">
+            </div>
+        </section>
+
+        <!-- Tutorial Content -->
+        <section class="tutorial-content">
+            <div class="container">
+                <p class="tutorial-intro">
+                    Découvrez les 5 gestes essentiels de la couture pour commencer vos projets d'upcycling. Ces techniques de base vous permettront de transformer vos vêtements et de donner libre cours à votre créativité.
+                </p>
+
+                <div class="materials">
+                    <h3>Matériel de base</h3>
+                    <ul>
+                        <li>Machine à coudre (ou aiguille et fil pour débuter)</li>
+                        <li>Ciseaux de couture</li>
+                        <li>Épingles</li>
+                        <li>Fil assorti</li>
+                        <li>Mètre ruban</li>
+                        <li>Craie de tailleur</li>
+                        <li>Dé à coudre</li>
+                    </ul>
+                </div>
+
+                <div class="gestes">
+                    <div class="geste">
+                        <div class="geste-image">
+                            <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Geste 1">
+                        </div>
+                        <div class="geste-content">
+                            <div class="geste-number">Geste 1</div>
+                            <h3 class="geste-title">L'ourlet simple</h3>
+                            <p class="geste-text">L'ourlet est la base de la couture. Pliez le bord du tissu vers l'intérieur, épinglez, puis cousez à 1cm du bord. C'est parfait pour raccourcir un pantalon ou une robe.</p>
+                        </div>
+                    </div>
+
+                    <div class="geste">
+                        <div class="geste-image">
+                            <img src="https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Geste 2">
+                        </div>
+                        <div class="geste-content">
+                            <div class="geste-number">Geste 2</div>
+                            <h3 class="geste-title">La couture droite</h3>
+                            <p class="geste-text">La couture droite assemble deux pièces de tissu. Placez les tissus endroit contre endroit, épinglez, puis cousez à 1,5cm du bord. C'est la base de tous vos projets.</p>
+                        </div>
+                    </div>
+
+                    <div class="geste">
+                        <div class="geste-image">
+                            <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Geste 3">
+                        </div>
+                        <div class="geste-content">
+                            <div class="geste-number">Geste 3</div>
+                            <h3 class="geste-title">La pince</h3>
+                            <p class="geste-text">Les pinces ajustent la forme d'un vêtement. Pincez le tissu, épinglez, puis cousez en partant du bord vers la pointe. C'est idéal pour ajuster une taille ou une poitrine.</p>
+                        </div>
+                    </div>
+
+                    <div class="geste">
+                        <div class="geste-image">
+                            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Geste 4">
+                        </div>
+                        <div class="geste-content">
+                            <div class="geste-number">Geste 4</div>
+                            <h3 class="geste-title">La surpiqûre</h3>
+                            <p class="geste-text">La surpiqûre renforce et décore une couture. Cousez à 0,5cm de la couture principale, sur l'endroit du tissu. Elle donne un aspect professionnel à vos créations.</p>
+                        </div>
+                    </div>
+
+                    <div class="geste">
+                        <div class="geste-image">
+                            <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Geste 5">
+                        </div>
+                        <div class="geste-content">
+                            <div class="geste-number">Geste 5</div>
+                            <h3 class="geste-title">Le biais</h3>
+                            <p class="geste-text">Le biais finit proprement les bords. Enroulez le biais autour du bord du tissu et cousez. Il donne un aspect fini et professionnel à vos créations.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="text-align: center;">
+                    <a href="index.html" class="back-link">← Retour à Metanoia</a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
