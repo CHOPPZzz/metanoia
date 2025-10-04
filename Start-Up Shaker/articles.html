@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Articles - Metanoia</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400;600&family=Inter:wght@300;400;500&family=JA+Jayagiri+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        .page {
+            padding-top: 100px;
+        }
+        .page-hero {
+            background: linear-gradient(135deg, #f5f3f0 0%, #e8e4e0 100%);
+            padding: 80px 0;
+            text-align: center;
+        }
+        .page-title {
+            font-family: 'JA Jayagiri Sans', sans-serif;
+            font-size: 3rem;
+            font-weight: 600;
+            color: #2c2c2c;
+            margin-bottom: 30px;
+            letter-spacing: 2px;
+        }
+        .page-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 80px 20px;
+        }
+        .articles-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 40px;
+            margin: 40px 0;
+        }
+        .article-card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+        }
+        .article-image {
+            height: 250px;
+            overflow: hidden;
+        }
+        .article-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.4s ease;
+        }
+        .article-info {
+            padding: 30px;
+        }
+        .article-date {
+            color: #8b7355;
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+        .article-info h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+            color: #2c2c2c;
+        }
+        .article-description {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        .article-category {
+            color: #8b7355;
+            font-size: 12px;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 15px;
+        }
+        .btn-read {
+            background: #8b7355;
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .btn-read:hover {
+            background: #6b5b47;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(139, 115, 85, 0.3);
+        }
+        .article-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+        }
+        .article-card:hover .article-image img {
+            transform: scale(1.05);
+        }
+        .back-link {
+            display: inline-block;
+            margin-top: 40px;
+            color: #8b7355;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+        .back-link:hover {
+            color: #2c2c2c;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <div class="menu-hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="logo">
+                <a href="index.html" style="text-decoration: none; color: inherit;">
+                    <h1>Metanoia</h1>
+                </a>
+            </div>
+            <div class="header-icons">
+                <a href="#" class="icon-link">🔍</a>
+                <a href="#" class="icon-link">♡</a>
+                <a href="#" class="icon-link">🛒</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="page">
+        <!-- Page Hero -->
+        <section class="page-hero">
+            <div class="container">
+                <h1 class="page-title">Articles</h1>
+                <img src="images/philosophie luxe.webp" alt="Articles Metanoia" style="max-width: 600px; width: 100%; border-radius: 8px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);">
+            </div>
+        </section>
+
+        <!-- Page Content -->
+        <section class="page-content">
+            <div class="container">
+                <h2 style="font-family: 'Playfair Display', serif; text-align: center; margin-bottom: 50px; color: #2c2c2c;">Découvrez nos derniers articles</h2>
+                
+                <div class="articles-grid">
+                    <div class="article-card">
+                        <div class="article-image">
+                            <img src="images/couture.webp" alt="Mode upcyclée">
+                        </div>
+                        <div class="article-info">
+                            <div class="article-category">Mode</div>
+                            <div class="article-date">15 Janvier 2024</div>
+                            <h3>La Révolution de la Mode Durable</h3>
+                            <p class="article-description">Comment l'upcycling transforme l'industrie de la mode et redéfinit notre rapport au luxe et à la consommation. Découvrez les enjeux et les solutions.</p>
+                            <a href="article-mode-durable.html" class="btn-read">Lire l'article</a>
+                        </div>
+                    </div>
+
+                    <div class="article-card">
+                        <div class="article-image">
+                            <img src="images/artisan.webp" alt="Artisanat moderne">
+                        </div>
+                        <div class="article-info">
+                            <div class="article-category">Artisanat</div>
+                            <div class="article-date">12 Janvier 2024</div>
+                            <h3>L'Artisanat au Cœur de l'Innovation</h3>
+                            <p class="article-description">Découvrez comment les artisans modernes réinventent les techniques traditionnelles pour créer des pièces d'exception et préserver notre patrimoine.</p>
+                            <a href="article-artisanat-innovation.html" class="btn-read">Lire l'article</a>
+                        </div>
+                    </div>
+
+                    <div class="article-card">
+                        <div class="article-image">
+                            <img src="images/textiles tissés.webp" alt="Écologie">
+                        </div>
+                        <div class="article-info">
+                            <div class="article-category">Écologie</div>
+                            <div class="article-date">10 Janvier 2024</div>
+                            <h3>L'Impact Environnemental de la Mode</h3>
+                            <p class="article-description">Une analyse approfondie de l'impact de l'industrie textile et des solutions durables pour l'avenir. Chiffres et solutions concrètes.</p>
+                            <a href="article-impact-environnemental.html" class="btn-read">Lire l'article</a>
+                        </div>
+                    </div>
+
+                    <div class="article-card">
+                        <div class="article-image">
+                            <img src="images/cuir végan.webp" alt="Créateurs">
+                        </div>
+                        <div class="article-info">
+                            <div class="article-category">Portraits</div>
+                            <div class="article-date">8 Janvier 2024</div>
+                            <h3>Portrait : Marie Dubois d'Éthique Couture</h3>
+                            <p class="article-description">Rencontre avec la fondatrice d'Éthique Couture, pionnière du denim upcyclé en France. Son parcours, sa vision et ses projets.</p>
+                            <a href="article-portrait-marie-dubois.html" class="btn-read">Lire l'article</a>
+                        </div>
+                    </div>
+
+                    <div class="article-card">
+                        <div class="article-image">
+                            <img src="images/accessoires.webp" alt="Techniques">
+                        </div>
+                        <div class="article-info">
+                            <div class="article-category">DIY</div>
+                            <div class="article-date">5 Janvier 2024</div>
+                            <h3>Techniques d'Upcycling : Guide Complet</h3>
+                            <p class="article-description">Toutes les techniques essentielles pour transformer vos vêtements et donner libre cours à votre créativité. Guide pratique étape par étape.</p>
+                            <a href="article-techniques-upcycling.html" class="btn-read">Lire l'article</a>
+                        </div>
+                    </div>
+
+                    <div class="article-card">
+                        <div class="article-image">
+                            <img src="images/bijoux.webp" alt="Communauté">
+                        </div>
+                        <div class="article-info">
+                            <div class="article-category">Communauté</div>
+                            <div class="article-date">3 Janvier 2024</div>
+                            <h3>La Communauté Metanoia : Histoires Inspirantes</h3>
+                            <p class="article-description">Découvrez les histoires touchantes de nos membres et leurs créations les plus originales. Une communauté qui grandit ensemble.</p>
+                            <a href="article-communaute-metanoia.html" class="btn-read">Lire l'article</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="text-align: center;">
+                    <a href="index.html" class="back-link">← Retour à Metanoia</a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

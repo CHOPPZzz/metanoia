@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donner une seconde vie aux chutes - Metanoia</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        .tutorial-page {
+            padding-top: 100px;
+        }
+        .tutorial-hero {
+            background: linear-gradient(135deg, #f5f3f0 0%, #e8e4e0 100%);
+            padding: 80px 0;
+            text-align: center;
+        }
+        .tutorial-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            font-weight: 300;
+            color: #2c2c2c;
+            margin-bottom: 30px;
+            letter-spacing: 1px;
+        }
+        .tutorial-content {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 80px 20px;
+        }
+        .tutorial-intro {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            color: #666;
+            margin-bottom: 50px;
+            text-align: center;
+            font-style: italic;
+        }
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
+        .project-card {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+            text-align: center;
+        }
+        .project-image {
+            height: 200px;
+            margin-bottom: 20px;
+            overflow: hidden;
+            border-radius: 8px;
+        }
+        .project-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .project-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+            color: #2c2c2c;
+        }
+        .project-text {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        .project-materials {
+            background: #f5f3f0;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        .project-materials h4 {
+            font-family: 'Playfair Display', serif;
+            margin-bottom: 10px;
+            color: #2c2c2c;
+        }
+        .project-materials ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .project-materials li {
+            padding: 5px 0;
+            color: #666;
+            font-size: 14px;
+        }
+        .project-materials li:before {
+            content: "✂️ ";
+            margin-right: 8px;
+        }
+        .back-link {
+            display: inline-block;
+            margin-top: 40px;
+            color: #8b7355;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+        .back-link:hover {
+            color: #2c2c2c;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <div class="menu-hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="logo">
+                <a href="index.html" style="text-decoration: none; color: inherit;">
+                    <h1>Metanoia</h1>
+                </a>
+            </div>
+            <div class="header-icons">
+                <a href="#" class="icon-link">🔍</a>
+                <a href="#" class="icon-link">♡</a>
+                <a href="#" class="icon-link">🛒</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="tutorial-page">
+        <!-- Tutorial Hero -->
+        <section class="tutorial-hero">
+            <div class="container">
+                <h1 class="tutorial-title">Donner une seconde vie aux chutes</h1>
+                <img src="images/textiles tissés.webp" alt="Chutes de tissus" style="max-width: 600px; width: 100%; border-radius: 8px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);">
+            </div>
+        </section>
+
+        <!-- Tutorial Content -->
+        <section class="tutorial-content">
+            <div class="container">
+                <p class="tutorial-intro">
+                    Transformez vos chutes de tissus en créations originales ! Ces petits morceaux de tissu peuvent devenir des accessoires uniques, des décorations ou même des vêtements. Découvrez nos idées créatives pour valoriser chaque centimètre de tissu.
+                </p>
+
+                <div class="projects">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="images/sac cuir végétal.webp" alt="Sac à main">
+                        </div>
+                        <h3 class="project-title">Sac à main patchwork</h3>
+                        <p class="project-text">Créez un sac unique en assemblant différentes chutes de tissus. L'effet patchwork donne un style bohème et original.</p>
+                        <div class="project-materials">
+                            <h4>Matériel :</h4>
+                            <ul>
+                                <li>Chutes de tissus variés</li>
+                                <li>Doublure</li>
+                                <li>Fermeture éclair</li>
+                                <li>Anses en cuir ou tissu</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Coussin décoratif">
+                        </div>
+                        <h3 class="project-title">Coussin décoratif</h3>
+                        <p class="project-text">Transformez vos chutes en coussins colorés. Mélangez les textures et les motifs pour un rendu unique.</p>
+                        <div class="project-materials">
+                            <h4>Matériel :</h4>
+                            <ul>
+                                <li>Chutes de tissus</li>
+                                <li>Rembourrage</li>
+                                <li>Fermeture invisible</li>
+                                <li>Fil assorti</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Bijoux textiles">
+                        </div>
+                        <h3 class="project-title">Bijoux textiles</h3>
+                        <p class="project-text">Créez des boucles d'oreilles, colliers ou bracelets avec de petits morceaux de tissus. Laissez libre cours à votre créativité !</p>
+                        <div class="project-materials">
+                            <h4>Matériel :</h4>
+                            <ul>
+                                <li>Petites chutes</li>
+                                <li>Perles</li>
+                                <li>Fil de fer</li>
+                                <li>Boucles d'oreilles</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Écharpe patchwork">
+                        </div>
+                        <h3 class="project-title">Écharpe patchwork</h3>
+                        <p class="project-text">Assemblez des chutes de différentes couleurs pour créer une écharpe unique et colorée. Parfait pour l'automne !</p>
+                        <div class="project-materials">
+                            <h4>Matériel :</h4>
+                            <ul>
+                                <li>Chutes de tissus doux</li>
+                                <li>Doublure chaude</li>
+                                <li>Franges (optionnel)</li>
+                                <li>Fil assorti</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="text-align: center;">
+                    <a href="index.html" class="back-link">← Retour à Metanoia</a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

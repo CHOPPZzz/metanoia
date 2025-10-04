@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tous les créateurs - Metanoia</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        .creators-hero {
+            height: 50vh;
+            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), 
+                        url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1920&h=600&fit=crop') center/cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+        }
+        .creators-content {
+            padding: 80px 0;
+            background: white;
+        }
+        .creators-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            margin-bottom: 60px;
+        }
+        .creator-card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+        }
+        .creator-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+        }
+        .creator-image {
+            height: 250px;
+            overflow: hidden;
+        }
+        .creator-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.4s ease;
+        }
+        .creator-card:hover .creator-image img {
+            transform: scale(1.05);
+        }
+        .creator-info {
+            padding: 30px;
+            text-align: center;
+        }
+        .creator-info h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            font-weight: 400;
+            margin-bottom: 10px;
+            color: #2c2c2c;
+        }
+        .creator-info p {
+            color: #666;
+            margin-bottom: 20px;
+            font-size: 0.9rem;
+        }
+        .creator-link {
+            color: #2c2c2c;
+            text-decoration: none;
+            font-weight: 500;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.3s ease;
+        }
+        .creator-link:hover {
+            border-bottom-color: #2c2c2c;
+        }
+        .back-link {
+            display: inline-block;
+            margin-top: 40px;
+            color: #2c2c2c;
+            text-decoration: none;
+            font-weight: 500;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.3s ease;
+        }
+        .back-link:hover {
+            border-bottom-color: #2c2c2c;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <div class="menu-hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="logo">
+                <h1><a href="index.html" style="text-decoration: none; color: inherit;">Metanoia</a></h1>
+            </div>
+            <div class="header-icons">
+                <a href="#search" class="icon-link">🔍</a>
+                <a href="#favorites" class="icon-link">♡</a>
+                <a href="#cart" class="icon-link">🛒</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="creators-hero">
+        <div>
+            <h1>Tous les créateurs</h1>
+            <p>Découvrez notre communauté d'artisans et de créateurs</p>
+        </div>
+    </section>
+
+    <section class="creators-content">
+        <div class="container">
+            <div class="creators-grid">
+                <div class="creator-card">
+                    <div class="creator-image">
+                        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=300&fit=crop" alt="Luxe Renouveau">
+                    </div>
+                    <div class="creator-info">
+                        <h3>Luxe Renouveau</h3>
+                        <p>Spécialité : Denim upcyclé</p>
+                        <a href="marques/luxe-renouveau.html" class="creator-link">Découvrir la marque</a>
+                    </div>
+                </div>
+                <div class="creator-card">
+                    <div class="creator-image">
+                        <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=400&h=300&fit=crop" alt="Cuir Vert">
+                    </div>
+                    <div class="creator-info">
+                        <h3>Cuir Vert</h3>
+                        <p>Spécialité : Cuir végétal</p>
+                        <a href="marques/cuir-vert.html" class="creator-link">Découvrir la marque</a>
+                    </div>
+                </div>
+                <div class="creator-card">
+                    <div class="creator-image">
+                        <img src="https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=400&h=300&fit=crop" alt="Fibre Noble">
+                    </div>
+                    <div class="creator-info">
+                        <h3>Fibre Noble</h3>
+                        <p>Spécialité : Tissage artisanal</p>
+                        <a href="marques/fibre-noble.html" class="creator-link">Découvrir la marque</a>
+                    </div>
+                </div>
+                <div class="creator-card">
+                    <div class="creator-image">
+                        <img src="https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=400&h=300&fit=crop" alt="Artisan Éthique">
+                    </div>
+                    <div class="creator-info">
+                        <h3>Artisan Éthique</h3>
+                        <p>Spécialité : Couture sur mesure</p>
+                        <a href="marques/artisan-ethique.html" class="creator-link">Découvrir la marque</a>
+                    </div>
+                </div>
+                <div class="creator-card">
+                    <div class="creator-image">
+                        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=300&fit=crop" alt="Matière Première">
+                    </div>
+                    <div class="creator-info">
+                        <h3>Matière Première</h3>
+                        <p>Spécialité : Accessoires upcyclés</p>
+                        <a href="marques/matiere-premiere.html" class="creator-link">Découvrir la marque</a>
+                    </div>
+                </div>
+                <div class="creator-card">
+                    <div class="creator-image">
+                        <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=400&h=300&fit=crop" alt="Éco Création">
+                    </div>
+                    <div class="creator-info">
+                        <h3>Éco Création</h3>
+                        <p>Spécialité : Bijoux recyclés</p>
+                        <a href="marques/eco-creation.html" class="creator-link">Découvrir la marque</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div style="text-align: center;">
+                <a href="index.html" class="back-link">← Retour à Metanoia</a>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

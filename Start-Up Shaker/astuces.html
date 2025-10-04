@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astuces - Metanoia</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <div class="menu-hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="logo">
+                <a href="index.html" style="text-decoration: none; color: inherit;"><h1>Metanoia</h1></a>
+            </div>
+            <div class="header-icons">
+                <a href="#search" class="icon-link">🔍</a>
+                <a href="#favorites" class="icon-link">♡</a>
+                <a href="#cart" class="icon-link">🛒</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Content -->
+    <main style="margin-top: 80px; padding: 60px 0;">
+        <div class="container">
+            <h1 style="font-size: 48px; text-align: center; margin-bottom: 60px; color: #2c2c2c;">Nos Astuces</h1>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 40px; margin-bottom: 60px;">
+                <div style="background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 5px 20px rgba(0,0,0,0.08);">
+                    <img src="https://images.unsplash.com/photo-1558769132-cb1aea458c5e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                         alt="Astuce couture" 
+                         style="width: 100%; height: 200px; object-fit: cover;">
+                    <div style="padding: 30px;">
+                        <h3 style="font-size: 20px; margin-bottom: 15px; color: #2c2c2c;">💡 Astuce Couture</h3>
+                        <p style="color: #666; line-height: 1.6; margin-bottom: 20px;">
+                            Pour un ourlet parfait, utilisez un fer à repasser avec vapeur avant de coudre. 
+                            Cela facilite le pliage et donne un résultat plus net.
+                        </p>
+                        <a href="tuto-couture-base.html" class="btn-outline" style="display: inline-block;">En savoir plus</a>
+                    </div>
+                </div>
+                
+                <div style="background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 5px 20px rgba(0,0,0,0.08);">
+                    <img src="https://images.unsplash.com/photo-1582582494705-f8ce0b0c24d0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                         alt="Astuce upcycling" 
+                         style="width: 100%; height: 200px; object-fit: cover;">
+                    <div style="padding: 30px;">
+                        <h3 style="font-size: 20px; margin-bottom: 15px; color: #2c2c2c;">♻️ Astuce Upcycling</h3>
+                        <p style="color: #666; line-height: 1.6; margin-bottom: 20px;">
+                            Avant de jeter un vêtement, examinez ses détails : boutons, fermetures, tissus... 
+                            Ils peuvent servir pour d'autres créations !
+                        </p>
+                        <a href="tuto-chutes-tissus.html" class="btn-outline" style="display: inline-block;">En savoir plus</a>
+                    </div>
+                </div>
+                
+                <div style="background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 5px 20px rgba(0,0,0,0.08);">
+                    <img src="https://images.unsplash.com/photo-1581833971358-2c8b550f87b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                         alt="Astuce entretien" 
+                         style="width: 100%; height: 200px; object-fit: cover;">
+                    <div style="padding: 30px;">
+                        <h3 style="font-size: 20px; margin-bottom: 15px; color: #2c2c2c;">🧺 Astuce Entretien</h3>
+                        <p style="color: #666; line-height: 1.6; margin-bottom: 20px;">
+                            Pour préserver vos créations upcyclées, lavez-les à l'envers à basse température 
+                            et laissez sécher à l'air libre.
+                        </p>
+                        <a href="#entretien" class="btn-outline" style="display: inline-block;">En savoir plus</a>
+                    </div>
+                </div>
+                
+                <div style="background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 5px 20px rgba(0,0,0,0.08);">
+                    <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                         alt="Astuce matériaux" 
+                         style="width: 100%; height: 200px; object-fit: cover;">
+                    <div style="padding: 30px;">
+                        <h3 style="font-size: 20px; margin-bottom: 15px; color: #2c2c2c;">🎨 Astuce Matériaux</h3>
+                        <p style="color: #666; line-height: 1.6; margin-bottom: 20px;">
+                            Mélangez les textures pour créer des effets visuels intéressants : 
+                            coton + lin, soie + denim... Laissez libre cours à votre créativité !
+                        </p>
+                        <a href="#materiaux" class="btn-outline" style="display: inline-block;">En savoir plus</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div style="text-align: center; margin-top: 60px;">
+                <a href="index.html" class="btn-outline">Retour à l'accueil</a>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

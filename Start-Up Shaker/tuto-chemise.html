@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transformer une chemise en top - Metanoia</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        .tutorial-page {
+            padding-top: 100px;
+        }
+        .tutorial-hero {
+            background: linear-gradient(135deg, #f5f3f0 0%, #e8e4e0 100%);
+            padding: 80px 0;
+            text-align: center;
+        }
+        .tutorial-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            font-weight: 300;
+            color: #2c2c2c;
+            margin-bottom: 30px;
+            letter-spacing: 1px;
+        }
+        .tutorial-content {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 80px 20px;
+        }
+        .tutorial-intro {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            color: #666;
+            margin-bottom: 50px;
+            text-align: center;
+            font-style: italic;
+        }
+        .steps {
+            display: grid;
+            gap: 40px;
+        }
+        .step {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+        }
+        .step:nth-child(even) {
+            grid-template-columns: 1fr 1fr;
+        }
+        .step:nth-child(even) .step-image {
+            order: 2;
+        }
+        .step:nth-child(even) .step-content {
+            order: 1;
+        }
+        .step-image img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+        .step-number {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            color: #8b7355;
+            margin-bottom: 15px;
+        }
+        .step-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: #2c2c2c;
+        }
+        .step-text {
+            color: #666;
+            line-height: 1.6;
+        }
+        .materials {
+            background: #f5f3f0;
+            padding: 40px;
+            border-radius: 8px;
+            margin: 40px 0;
+        }
+        .materials h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            color: #2c2c2c;
+        }
+        .materials ul {
+            list-style: none;
+            padding: 0;
+        }
+        .materials li {
+            padding: 8px 0;
+            color: #666;
+        }
+        .materials li:before {
+            content: "✂️ ";
+            margin-right: 10px;
+        }
+        .back-link {
+            display: inline-block;
+            margin-top: 40px;
+            color: #8b7355;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+        .back-link:hover {
+            color: #2c2c2c;
+        }
+        @media (max-width: 768px) {
+            .step {
+                grid-template-columns: 1fr;
+            }
+            .step:nth-child(even) {
+                grid-template-columns: 1fr;
+            }
+            .step:nth-child(even) .step-image {
+                order: 1;
+            }
+            .step:nth-child(even) .step-content {
+                order: 2;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <div class="menu-hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="logo">
+                <a href="index.html" style="text-decoration: none; color: inherit;">
+                    <h1>Metanoia</h1>
+                </a>
+            </div>
+            <div class="header-icons">
+                <a href="#" class="icon-link">🔍</a>
+                <a href="#" class="icon-link">♡</a>
+                <a href="#" class="icon-link">🛒</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="tutorial-page">
+        <!-- Tutorial Hero -->
+        <section class="tutorial-hero">
+            <div class="container">
+                <h1 class="tutorial-title">Transformer une chemise en top</h1>
+                <img src="images/transformer sa chemise en top.webp" alt="Transformation chemise" style="max-width: 600px; width: 100%; border-radius: 8px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);">
+            </div>
+        </section>
+
+        <!-- Tutorial Content -->
+        <section class="tutorial-content">
+            <div class="container">
+                <p class="tutorial-intro">
+                    Donnez une seconde vie à vos chemises trop grandes ou démodées en les transformant en tops tendance. Ce tutoriel vous guide étape par étape pour créer des pièces uniques et personnalisées.
+                </p>
+
+                <div class="materials">
+                    <h3>Matériel nécessaire</h3>
+                    <ul>
+                        <li>Une chemise en coton (taille L ou XL pour plus de liberté)</li>
+                        <li>Ciseaux de couture</li>
+                        <li>Machine à coudre ou aiguille et fil</li>
+                        <li>Épingles</li>
+                        <li>Craie de tailleur</li>
+                        <li>Règle ou mètre</li>
+                        <li>Boutons ou fermeture éclair (optionnel)</li>
+                    </ul>
+                </div>
+
+                <div class="steps">
+                    <div class="step">
+                        <div class="step-image">
+                            <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Étape 1">
+                        </div>
+                        <div class="step-content">
+                            <div class="step-number">Étape 1</div>
+                            <h3 class="step-title">Préparation et mesures</h3>
+                            <p class="step-text">Lavez et repassez votre chemise. Mesurez votre tour de poitrine et la longueur désirée pour le top. Marquez ces mesures sur la chemise avec la craie de tailleur.</p>
+                        </div>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-image">
+                            <img src="https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Étape 2">
+                        </div>
+                        <div class="step-content">
+                            <div class="step-number">Étape 2</div>
+                            <h3 class="step-title">Découpage des manches</h3>
+                            <p class="step-text">Découpez les manches en suivant la couture d'épaule. Gardez les manches pour d'autres projets ! Cousez les emmanchures pour éviter que le tissu s'effiloche.</p>
+                        </div>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-image">
+                            <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Étape 3">
+                        </div>
+                        <div class="step-content">
+                            <div class="step-number">Étape 3</div>
+                            <h3 class="step-title">Ajustement de la taille</h3>
+                            <p class="step-text">Pincez les côtés de la chemise pour ajuster la taille. Cousez les pinces en partant des aisselles vers le bas. Testez l'ajustement avant de finaliser.</p>
+                        </div>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-image">
+                            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Étape 4">
+                        </div>
+                        <div class="step-content">
+                            <div class="step-number">Étape 4</div>
+                            <h3 class="step-title">Finitions</h3>
+                            <p class="step-text">Ourlez le bas du top. Vous pouvez garder les boutons originaux ou les remplacer par des boutons plus originaux. Ajoutez des détails comme des broderies ou des appliqués.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="text-align: center;">
+                    <a href="index.html" class="back-link">← Retour à Metanoia</a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
